@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "812c05cd-df80-4d8b-83cd-d2d88dcbed5f",
+		"name": "Node JS - Grammer API - Virtual Writing Tutor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Grammer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "He has go to beach  by his friend Jane",
+							"type": "text"
+						},
+						{
+							"key": "appKey",
+							"value": "7d1b9e85-75a3-11ea-b6cd-ac1f6b057810",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://virtualwritingtutor.com/api/checkgrammar.php",
+					"protocol": "https",
+					"host": [
+						"virtualwritingtutor",
+						"com"
+					],
+					"path": [
+						"api",
+						"checkgrammar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grammar check API - Node JS",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "6a7edc3e-6cfa-11e7-97aa-00224d567b10",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "vwtapikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"He has go to beach  by his friend Jane\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://console.virtualwritingtutor.com/console/grammar/check-grammar",
+					"protocol": "https",
+					"host": [
+						"console",
+						"virtualwritingtutor",
+						"com"
+					],
+					"path": [
+						"console",
+						"grammar",
+						"check-grammar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Grammer - Node Server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Essay tasks - Node JS",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "6a7edc3e-6cfa-11e7-97aa-00224d567b10",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "vwtapikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://console.virtualwritingtutor.com/console/essay/essay-tasks",
+					"protocol": "https",
+					"host": [
+						"console",
+						"virtualwritingtutor",
+						"com"
+					],
+					"path": [
+						"console",
+						"essay",
+						"essay-tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check User API Info - Node JS",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "6a7edc3e-6cfa-11e7-97aa-00224d567b10",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "vwtapikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "vwtapikey",
+						"value": "6a7edc3e-6cfa-11e7-97aa-00224d567b10",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://console.virtualwritingtutor.com/console/auth/info",
+					"protocol": "https",
+					"host": [
+						"console",
+						"virtualwritingtutor",
+						"com"
+					],
+					"path": [
+						"console",
+						"auth",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - IELTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - Actively Engaged in Academic writing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - Actively Engaged in College",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - Actively engaged on the job",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - Actively engaged online",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Lists - Actively engaged in persuation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Essay Post Request",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "6a7edc3e-6cfa-11e7-97aa-00224d567b10",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "vwtapikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"test_link\" : \"t1-task 1 test 1\",\n\t\"text\":\"It is common belief that children should be educated a foreign language for children at primary school rather than secondary school. While this issue is beneficial to some extent, I strongly side with it. No doubt, it is much better for children to begin learning a foreign language at primary school because children are fast learners and acquiring a new language is good for their neurological development.\\nFirstly, at the primary school, children can learn faster than that at secondary school. It is true that children are between five and nine years old have the capacity to remember things fast twice as people in others age group. For instance, in China children can learn three languages such as German, English and France at an early age.\\nSecondly, learning a foreign language is helpful for developing a child’s brain. One research shown that learning any language could activate various new parts, which were never used before in their brain. Hence, School also have to play an important role to generate the suitable environment and methods for children learning language.\\nOn the other hand, at secondary school, pupils have to learn more subjects, which is compulsory in the curriculum such as Chemistry, Biology and History. Therefore, they have to spend time on learning more subjects, leading to the lack of time to learn another language. In addition, in modern days, it is necessary that children have to learn a foreign language. These days, workers prefer working at multinational company, where it has high salary and healthy working place. Hence, pupils have to being multilingual to have more job prospects in these companies.\\nTo sum up, instruction in a second language at elementary school is better than leaving it until later in life because kids learn new languages quickly when young and language learning has a beneficial affect on kids' growing brains. It is without doubt that despite a few burdensome aspects, this issue would still do more good than harm.\" \n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{node_url}}/essay/test-feedback",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"essay",
+						"test-feedback"
+					]
+				},
+				"description": "test data"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
